@@ -15,7 +15,8 @@ class Musico(models.Model):
 	email = models.EmailField(max_length=200)
 	idade = models.IntegerField()
 	ativo = models.BooleanField()
-
+    sexo = models.CharField(max_length=20)
+    
 	def __str__(self):
 		return self.nome
 
